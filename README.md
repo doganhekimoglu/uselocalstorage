@@ -10,6 +10,8 @@ Value for the given key will be in sync across different hook calls, components 
 ![Q1Qnv1xaUj](https://user-images.githubusercontent.com/39832865/230778477-5480378a-5f89-451b-bafe-b4e1e34bb00f.gif)
 
 ```ts
+import useLocalStorage from "use-loc-storage";
+
 // Signature
 type useLocalStorageFn = (key: string, initialValue?: string) => [string | null, (newValue: string) => void, () => void];
 
